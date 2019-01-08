@@ -1,0 +1,217 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom:1;
+}
+
+.fl {
+    float: left;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+.qb-wrapper .qb-container {
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+}
+
+.qb-wrapper .qb-container .ball {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.qb-wrapper .qb-container .ball.black {
+    border: 5px solid black;
+}
+
+.qb-wrapper .qb-container .ball.yellow {
+    border: 5px solid yellow;
+}
+
+.qb-wrapper .qb-container .ball.green {
+    border: 5px solid green;
+}
+
+/* 问题反馈页样式 */
+.question-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 99999;
+}
+
+.question-container .q-title {
+    position: relative;
+    height: 44px;
+    padding: 0 15px;
+    text-align: center;
+    background: #F3F3F3;
+}
+
+.question-container .q-title .icon-back {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+}
+
+.question-container .q-title .icon-back:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-45deg);
+}
+
+.question-container .q-title .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #101010;
+    line-height: 44px;
+    text-align: center;
+}
+
+.question-content {
+    padding: 20px;
+}
+
+.question-content .question-inp {
+    width: 100%;
+    height: 220px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    resize: none;
+    outline: none;
+}
+
+.question-content .btn-bottom {
+    margin-top: 60px;
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    color: #101010;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.question-content .photo-upload-block {
+    width: 100%;
+    margin-top: 14px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .question-content .photo-upload-block .upload-wrap {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .question-content .photo-upload-block .upload-wrap .img-list {
+    width: 100%;
+  }
+  .question-content .photo-upload-block .upload-wrap .img-list li {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 93px;
+    height: 84px;
+  }
+  .question-content .photo-upload-block .upload-wrap .img-list .icon-del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background: #999;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .question-content .photo-upload-block .upload-wrap .upload-btn {
+    position: relative;
+    margin-bottom: 10px;
+    width: 93px;
+    height: 84px;
+    border: 1px solid #bbb;
+    text-align: center;
+    line-height: 84px;
+  }
+  .question-content .photo-upload-block .upload-wrap .upload-btn span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      margin-top: -5px;
+      font-size: 44px;
+      color: #101010;
+  }
+  .question-content #upload_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  /* 弹框提示 */
+  .question-container .alert-tip {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      width: 60%;
+      padding: 10px 20px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, .5);
+      border-radius: 8px;
+      z-index: 99;
+  }
